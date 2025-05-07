@@ -88,7 +88,7 @@ ${rua}, Nº ${numero}
 *Estado:* ${estado}
 *CEP:* ${cep}`;
 
-    window.open(`https://wa.me/5543991849075?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/5543991036531?text=${encodeURIComponent(msg)}`, "_blank");
 });
 
 
