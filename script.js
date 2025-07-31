@@ -56,6 +56,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const nome = document.getElementById("nome").value;
+	const profissao = document.getElementById("profissao").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telefone").value;
     const cpf = document.getElementById("cpf").value;
@@ -74,6 +75,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
 ` *Quero ser consultora Kalita Tudisco!*
 
 *Nome:* ${nome}
+*Profissão:* ${profissao}
 *Email:* ${email}
 *Telefone:* ${telefone}
 *CPF:* ${cpf}
@@ -86,7 +88,9 @@ ${rua}, Nº ${numero}
 *Bairro:* ${bairro}
 *Cidade:* ${cidade}
 *Estado:* ${estado}
-*CEP:* ${cep}`;
+*CEP:* ${cep}
+
+*Para Adiantar o processo*, nos envie uma foto do seu documento, *RG e CPF ou CNH + Comprovante de Residencia*`;
 
     window.open(`https://wa.me/5543991036531?text=${encodeURIComponent(msg)}`, "_blank");
 });
