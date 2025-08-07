@@ -8,6 +8,7 @@
 	<link rel="icon" href="https://imgur.com/G3dSZFu.png" type="image/png"> <!-- Ícone aqui -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
 </head>
 <body>
 <header class="header" style="background-color: #fdf6f3; padding: 0px; text-align: center;">
@@ -160,8 +161,16 @@
                 <input type="text" id="nome" placeholder="Nome Completo" required/>
 				<input type="text" id="profissao" placeholder="Profissão" required/>
                 <input type="email" id="email" placeholder="Email" required/>
-                <input type="tel" id="telefone" placeholder="Telefone" required/>
-                <input type="text" id="cpf" placeholder="CPF" required/>
+                <input type="tel" id="telefone" placeholder="Telefone" required/>				
+				<div class="ref-group">
+				<input type="tel" id="telefone2" placeholder="Telefone Referência" required/>
+				<input type="text" id="nomeReferencia1" placeholder="Nome da Referência" required/>
+				</div>				
+				<div class="ref-group">
+				<input type="tel" id="telefone3" placeholder="Telefone Referência" required/>
+				<input type="text" id="nomeReferencia2" placeholder="Nome da Referência" required/>
+				</div>				
+				<input type="text" id="cpf" placeholder="CPF" required/>
 				<input type="text" id="nascimento" placeholder="Data de Nascimento (dd/mm/aaaa)" required/>
 				<input type="text" id="instagram" placeholder="@Instagram" required/>
                 <span id="cpfErro" class="error-msg"></span>
@@ -171,6 +180,7 @@
                 <input type="text" id="bairro" placeholder="Bairro" required/>
                 <input type="text" id="cidade" placeholder="Cidade" required/>
 				<input type="text" id="estado" placeholder="Estado" required/>
+				
                 
     <div class="form-group" style="margin-top: 10px;">
       <label>Já teve experiência com vendas?</label><br>

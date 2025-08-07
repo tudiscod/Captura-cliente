@@ -228,3 +228,14 @@ button:hover {
   background-color: #c2185b;
   transform: translateY(-1px);
 }
+.ref-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ref-group input {
+  width: 50%;
+  box-sizing: border-box;
+}
+

@@ -24,7 +24,6 @@ document.getElementById("cep").addEventListener("blur", function () {
         });
 });
 
-
 // Validação de CPF
 function validarCPF(cpf) {
     cpf = cpf.replace(/[^\d]+/g,'');
@@ -59,6 +58,10 @@ document.getElementById("form").addEventListener("submit", function(e) {
 	const profissao = document.getElementById("profissao").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telefone").value;
+	const telefone2 = document.getElementById("telefone2").value;
+	const nomeReferencia1 = document.getElementById("nomeReferencia1").value;
+	const telefone3 = document.getElementById("telefone3").value;
+	const nomeReferencia2 = document.getElementById("nomeReferencia2").value;
     const cpf = document.getElementById("cpf").value;
     const nascimento = document.getElementById("nascimento").value;
     const instagram = document.getElementById("instagram").value;
@@ -78,6 +81,10 @@ document.getElementById("form").addEventListener("submit", function(e) {
 *Profissão:* ${profissao}
 *Email:* ${email}
 *Telefone:* ${telefone}
+*Referência:* ${telefone2}
+*Nome da Referência:* ${nomeReferencia1}
+*Referência* ${telefone3}
+*Nome da Referência:* ${nomeReferencia2}
 *CPF:* ${cpf}
 *Nascimento:* ${nascimento}
 *Instagram:* ${instagram}
